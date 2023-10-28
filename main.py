@@ -8,7 +8,7 @@ window = Tk()
 
 def label(window, text, size, x, y, width, height):
     font = Font(family="Inter", size=size)
-    label_frame = Frame(window, borderwidth=1, relief=SOLID, width=width, height=height)
+    label_frame = Frame(window, borderwidth=0, relief=SOLID, width=width, height=height, bg='#D9D9E2')
     label_frame.place(x=(x + width / 2), y=(y + height / 2), anchor=CENTER)
 
     _label = Label(label_frame, text=text, font=font)
@@ -17,7 +17,7 @@ def label(window, text, size, x, y, width, height):
 
 def button(window, text, size, x, y, width, height, bg, fg):
     font = ("Inter.ttf", size)
-    button_frame = Frame(window, borderwidth=1, relief=SOLID, width=width, height=height)
+    button_frame = Frame(window, borderwidth=0, relief=SOLID, width=width, height=height,bg='#D9D9E2')
     button_frame.place(x=(x + width / 2), y=(y + height / 2), anchor=CENTER)
     button_frame.pack_propagate(False)
 
